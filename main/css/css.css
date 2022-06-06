@@ -1,0 +1,407 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Bai Jamjuree:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,300&display=swap');
+
+body{
+
+    background-color: #e2d6b4;
+    background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+    overflow-x: hidden;
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.btn-flotante {
+	font-size: 16px; /* Cambiar el tamaño de la tipografia */
+	text-transform: uppercase; /* Texto en mayusculas */
+	font-weight: bold; /* Fuente en negrita o bold */
+	color: #ffffff; /* Color del texto */
+	border-radius: 5px; /* Borde del boton */
+	letter-spacing: 2px; /* Espacio entre letras */
+	background-color:  #027f92; /* Color de fondo */
+	padding: 18px 30px; /* Relleno del boton */
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	z-index: 99;
+}
+.btn-flotante:hover {
+    color: #ffffff;
+	background-color:  #036270; /* Color de fondo al pasar el cursor */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	transform: translateY(-7px);
+}
+@media only screen and (max-width: 600px) {
+ 	.btn-flotante {
+		font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+	}
+} 
+
+
+div{
+  
+    font-family: 'Bai Jamjuree', sans-serif;
+  
+}
+
+.contenedor-chat {
+    background-color: #e2d6b4;
+    background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    min-height:85vh;
+    padding: 5%;
+    align-items: end;
+     margin-bottom: 75px;
+  
+}
+
+.contenedor-consultas {
+    background-color: #e2d6b4;
+    background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    min-height:85vh;
+    padding: 5%;
+    align-items: end;
+    margin-bottom: 100px;
+  
+}
+
+.mensajes{
+    display: flex;
+    flex-direction:column-reverse;
+   
+}
+
+.navbar-toggler {
+    top: 0;
+  width:50px; 
+  right:0; 
+  bottom: 0;
+  position:absolute;
+  padding:0;
+  border: none;
+  outline: none;
+  
+}
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+.nav-tabs .nav-item .nav-link.active {
+    background-color: #e2d6b4;
+    background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  }
+
+
+.nav-tabs{
+    border-bottom:none;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border:none;
+}
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+.noChatAlert{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-self: center;
+    text-align: center;
+}
+
+.div-load{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-card{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding:15px;
+    border-radius: 3px;
+    align-items: center;
+  
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    ;
+    
+ 
+    
+}
+
+.nav-link{
+    text-transform: uppercase;
+}
+
+.chat-card-group{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding:15px;
+    border-radius: 3px;
+    align-items: center;
+ 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+   
+}
+
+.chat-body{
+    width: 90%;
+}
+
+.chat-body b{
+    font-size: 1.2em;
+    font: weight 100px;
+}
+
+.icon-image{
+    background-color: #027f92;
+    color: white;
+    min-width:50px;
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.icon-image-avatar{
+    min-width:50px;
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    object-fit: cover;
+    object-position: center;
+    background-color: #ffffff;
+}
+
+
+.icon-image-mini{
+    color: white;
+    min-width:35px;
+    background-color: #027f92;
+    border-radius: 50%;
+    height:35px;
+    width:35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;  
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.icon-image-new{
+    background-color: white;
+    min-width:100px;
+    border-radius: 50%;
+    height:100px;
+    width:100px;
+    
+    background-image: url("../../img/avatar/avata.png"); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.date-label{
+    font-size: 0.8em;
+}
+
+
+
+
+.icon-mensajes{
+    color:white;
+    background-color: #027f92;
+    border-radius: 50%;
+    height:25px;
+    width:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    min-width:25px;
+}
+
+.icon-back{
+    color:white;
+    background-color: #027f92;
+    border-radius: 50%;
+    height:30px;
+    width:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    min-width:30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.icon-back a{
+    text-decoration: none;
+    color:white;
+
+}
+
+input{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.div-mensajeRight{
+    display: flex;
+    
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    width:100%;
+}
+
+.div-mensajeLeft{
+    justify-content: flex-end;
+    display: flex;
+    border-radius: 5px;
+    padding: 5px;
+    width:100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.div-mensajeCenter{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    width:100%;
+
+}
+
+
+.mensajeBlanco{
+word-wrap: break-word;
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 7px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.mensajeVerde{
+    word-wrap: break-word;
+    background-color:#027f92;
+    color:#f3f3f3;
+    border-radius: 10px;
+    padding: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.mensajeAviso{
+    background-color:#f1f1c8;
+    color:#000000;
+    border-radius: 10px;
+    padding: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+.mensajeVerde .txt a{
+    color:rgb(255, 246, 209);
+}
+
+.mensajeBlanco .txt a{
+    color:rgb(0, 0, 0);
+}
+
+.inputMensaje{
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius:15px
+}
+
+#textInput,#textInput:hover{
+    background-color: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+
+
+
+
+@media (min-width: 1200px) {
+
+    .contenedor {
+        background-color: #e2d6b4;
+        background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+      
+        padding: 1%;
+        min-height:100vh;
+    
+         /*IMPORTANTE*/
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        font-family: 'Bai Jamjuree', sans-serif;
+      
+    }
+    .contenedor-chat {
+        background-color: #e2d6b4;
+        background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+         min-height:85vh;
+      
+        padding: 1%;
+        align-items: end;
+         margin-bottom: 75px;
+      
+    }
+    
+    .contenedor-consultas {
+        background-color: #e2d6b4;
+        background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+         min-height:85vh;
+      
+        padding: 1%;
+        align-items: end;
+        margin-bottom: 100px;
+      
+    }
+}
+

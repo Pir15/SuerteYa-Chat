@@ -1,0 +1,276 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Bai Jamjuree:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,300&display=swap');
+
+
+body{
+    background-color: #e2d6b4;
+    background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
+.contenedor {
+    
+    padding: 5%;
+    min-height:100vh;
+
+    font-family: 'Bai Jamjuree', sans-serif;
+  
+}
+
+.contenedor-chat {
+   
+    min-height:85vh;
+    padding: 5%;
+    align-items: end;
+    margin-bottom: 70px;
+  
+}
+
+.mensajes{
+    display: flex;
+    flex-direction:column-reverse;
+   
+}
+
+.navbar-toggler {
+    top: 0;
+  width:50px; 
+  right:0; 
+  bottom: 0;
+  position:absolute;
+  padding:0;
+  border: none;
+  outline: none;
+  
+}
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+.noChatAlert{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-self: center;
+    text-align: center;
+}
+
+.div-load{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-card{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding:15px;
+    border-radius: 3px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.chat-card-group{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding:15px;
+    border-radius: 3px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.chat-body{
+    width: 90%;
+}
+
+.chat-body b{
+    font-size: 1.2em;
+    font: weight 100px;
+}
+
+.icon-image-new{
+    background-color: white;
+    min-width:100px;
+    border-radius: 50%;
+    height:100px;
+    width:100px;
+    
+    background-image: url("../../img/avatar/avata.png"); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.date-label{
+    font-size: 0.8em;
+}
+
+
+
+
+.icon-mensajes{
+    color:white;
+    background-color: #027f92;
+    border-radius: 50%;
+    height:25px;
+    width:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    min-width:25px;
+    box-shadow:1px 1px 1px 1px rgb(73, 73, 73);
+}
+
+.icon-back{
+    color:white;
+    background-color: #027f92;
+    border-radius: 50%;
+    height:30px;
+    width:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    min-width:30px;
+    box-shadow:1px 1px 1px 1px rgb(73, 73, 73);
+}
+
+.icon-back a{
+    text-decoration: none;
+    color:white;
+
+}
+
+input{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.div-mensajeRight{
+    display: flex;
+    
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    width:100%;
+}
+
+.div-mensajeLeft{
+    justify-content: flex-end;
+    display: flex;
+    border-radius: 5px;
+    padding: 5px;
+    width:100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.div-mensajeCenter{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    width:100%;
+}
+
+
+.mensajeBlanco{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 7px;
+}
+
+.mensajeVerde{
+    background-color:#027f92;
+    color:#f3f3f3;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.mensajeAviso{
+    background-color:#f1f1c8;
+    color:#000000;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.text{
+    font-size: 1.2em;
+}
+
+
+.menu-option-text{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+
+@media (min-width: 1200px) {
+
+    .contenedor {
+       
+      
+        padding: 5%;
+        min-height:100vh;
+    
+        
+        font-family: 'Bai Jamjuree', sans-serif;
+      
+    }
+    .contenedor-chat {
+       
+         min-height:85vh;
+      
+        padding: 1%;
+        align-items: end;
+        margin-bottom: 70px;
+      
+    }
+}
+
+
+td{
+    text-align: center;
+    vertical-align: middle;
+}
+

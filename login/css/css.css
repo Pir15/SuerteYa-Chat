@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Bai Jamjuree:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,300&display=swap');
+
+.contenedor {
+    background-image: url("../img/custom_background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.form-login{
+
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size:1.2em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.863);
+    padding:30px;
+    border-radius:4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    font-size:1.1em;
+}
+
+
+
+
+@media (min-width: 550px) {
+    .form-login{
+        min-width: 500px;
+    }
+}

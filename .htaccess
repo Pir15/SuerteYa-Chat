@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+RewriteOptions inherit
+RewriteCond %{HTTP_HOST} ^chat\.suerteya\.com$
+RewriteRule ^/?$ "https\:\/\/chat\.suerteya\.com\/" [R=301,L]
+

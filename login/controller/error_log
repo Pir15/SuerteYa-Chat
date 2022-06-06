@@ -1,0 +1,3 @@
+[10-May-2022 14:51:48 Europe/Madrid] PHP Notice:  Undefined index: id_user in /home/suerteya/chat.suerteya.com/login/controller/cerrarSesion.php on line 4
+[10-May-2022 14:51:51 Europe/Madrid] PHP Notice:  Undefined index: id_user in /home/suerteya/chat.suerteya.com/login/controller/cerrarSesion.php on line 4
+[10-May-2022 14:51:52 Europe/Madrid] PHP Notice:  Undefined index: id_user in /home/suerteya/chat.suerteya.com/login/controller/cerrarSesion.php on line 4
